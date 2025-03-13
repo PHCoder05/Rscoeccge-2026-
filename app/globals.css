@@ -60,3 +60,75 @@ html {
   }
 }
 
+/* Custom colors for JSPM theme */
+:root {
+  --maroon: 0, 100%, 25%;
+  --maroon-dark: 0, 100%, 20%;
+  --gold: 45, 100%, 50%;
+  --gold-dark: 45, 100%, 45%;
+}
+
+.bg-maroon {
+  background-color: hsl(var(--maroon));
+}
+
+.bg-maroon-dark {
+  background-color: hsl(var(--maroon-dark));
+}
+
+.bg-gold {
+  background-color: hsl(var(--gold));
+}
+
+.bg-gold-dark {
+  background-color: hsl(var(--gold-dark));
+}
+
+.text-maroon {
+  color: hsl(var(--maroon));
+}
+
+.text-maroon-dark {
+  color: hsl(var(--maroon-dark));
+}
+
+.text-gold {
+  color: hsl(var(--gold));
+}
+
+.hover\:bg-maroon:hover {
+  background-color: hsl(var(--maroon));
+}
+
+.hover\:bg-maroon-dark:hover {
+  background-color: hsl(var(--maroon-dark));
+}
+
+.hover\:bg-gold:hover {
+  background-color: hsl(var(--gold));
+}
+
+.hover\:bg-gold\/90:hover {
+  background-color: hsla(var(--gold), 0.9);
+}
+
+.hover\:text-maroon:hover {
+  color: hsl(var(--maroon));
+}
+
+.hover\:text-maroon-dark:hover {
+  color: hsl(var(--maroon-dark));
+}
+
+.hover\:text-gold:hover {
+  color: hsl(var(--gold));
+}
+
+.border-maroon {
+  border-color: hsl(var(--maroon));
+}
+
+.border-gold {
+  border-color: hsl(var(--gold));
+}
+

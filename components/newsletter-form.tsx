@@ -32,7 +32,7 @@ export default function NewsletterForm() {
             required
             className="bg-white bg-opacity-20 border-0 text-white placeholder:text-white/70 focus-visible:ring-offset-0"
           />
-          <Button type="submit" className="bg-white text-green-600 hover:bg-gray-100">
+          <Button type="submit" className="bg-gold text-maroon hover:bg-gold/90">
             Subscribe
           </Button>
         </form>
