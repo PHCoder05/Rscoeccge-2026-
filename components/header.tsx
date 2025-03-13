@@ -24,6 +24,7 @@ export default function Header() {
     <header className="bg-white border-b border-gray-200">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
+          {/* Left Logo and Title */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image src="/jspm-logo.png" alt="JSPM Logo" width={80} height={80} className="mr-3" />
@@ -37,19 +38,23 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex">
+          <nav className="hidden md:flex items-center">
             <ul className="flex space-x-1">
               {navItems.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="px-3 py-2 text-sm font-medium text-gray-800 hover:text-maroon hover:bg-gray-50 rounded-md transition-colors"
+                    className="px-3 py-2 text-sm font-medium text-gray-800 hover:text-maroon hover:bg-gray-50 rounded-md transition-colors whitespace-nowrap"
                   >
                     {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
+            {/* Right Logo */}
+            <div className="ml-4">
+              <Image src="/jspm-logo.png" alt="JSPM Logo" width={80} height={80} />
+            </div>
           </nav>
 
           {/* Mobile menu button */}
@@ -87,6 +92,10 @@ export default function Header() {
                 </li>
               ))}
             </ul>
+            {/* Mobile Right Logo */}
+            <div className="mt-4 flex justify-center">
+              <Image src="/jspm-logo.png" alt="JSPM Logo" width={80} height={80} />
+            </div>
           </div>
         </div>
       )}

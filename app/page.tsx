@@ -13,33 +13,35 @@ export default function Home() {
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="https://www.jspmrscoe.edu.in/Images/JSPM/jspmInstitute.jpg"
             alt="Conference Background"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-maroon/90 to-maroon-dark/90" />
+          <div className="absolute inset-0 bg-black/70" />
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            2<sup>nd</sup> International Conference on
-            <span className="block mt-2">Computing, Communication, and Green Engineering</span>
-          </h1>
-          <h2 className="text-2xl md:text-3xl font-medium mb-6">CCGE-2026</h2>
-          <p className="text-xl md:text-2xl mb-8 flex items-center justify-center gap-2">
-            <Calendar className="h-6 w-6" /> 7<sup>th</sup> & 8<sup>th</sup> May 2026
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gold text-maroon hover:bg-gold/90">
-              Register Now <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
-              Submit Paper
-            </Button>
-          </div>
-          <div className="mt-12">
-            <CountdownTimer targetDate="2026-05-07T09:00:00" />
+          <div className="bg-maroon/80 backdrop-blur-sm p-6 md:p-10 rounded-lg inline-block">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-shadow-lg">
+              2<sup>nd</sup> International Conference on
+              <span className="block mt-2">Computing, Communication, and Green Engineering</span>
+            </h1>
+            <h2 className="text-2xl md:text-3xl font-medium mb-6 text-shadow-md">CCGE-2026</h2>
+            <p className="text-xl md:text-2xl mb-8 flex items-center justify-center gap-2 text-shadow-md">
+              <Calendar className="h-6 w-6" /> 7<sup>th</sup> & 8<sup>th</sup> May 2026
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-gold text-maroon hover:bg-gold/90">
+                Register Now <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+              <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
+                Submit Paper
+              </Button>
+            </div>
+            <div className="mt-12">
+              <CountdownTimer targetDate="2026-05-07T09:00:00" />
+            </div>
           </div>
         </div>
       </section>
@@ -377,7 +379,7 @@ export default function Home() {
                 </div>
                 <div className="h-[300px] md:h-auto relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="https://www.jspmrscoe.edu.in/Images/JSPM/jspmInstitute.jpg"
                     alt="Conference Venue"
                     fill
                     className="object-cover"

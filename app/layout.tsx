@@ -4,7 +4,7 @@ import { Poppins } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import TopBar from "@/components/top-bar"
+// import TopBar from "@/components/top-bar"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${poppins.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light">
-          <TopBar />
+          {/* <TopBar /> */}
           <Header />
           <main>{children}</main>
           <Footer />
